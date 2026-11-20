@@ -158,5 +158,5 @@ public sealed class JunkCleanerPlugin : ISystemMenuItemPlugin
     }
 
     private static void Show(string message, MessageBoxImage iconType)
-        => MessageBox.Show(message, "Junk Cleaner", MessageBoxButton.OK, iconType);
+        => MessageBox.Show(message, "Junk Cleaner - Aphex Studio Ryssby", MessageBoxButton.OK, iconType);
 }

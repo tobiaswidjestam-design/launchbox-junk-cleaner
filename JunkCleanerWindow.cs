@@ -23,7 +23,7 @@ internal sealed class JunkCleanerWindow : Window
 
     public JunkCleanerWindow(IReadOnlyList<(IGame Game, string File)> items)
     {
-        Title = "Junk Cleaner";
+        Title = "Junk Cleaner - Aphex Studio Ryssby";
         Width = 920;
         Height = 640;
         MinWidth = 640;
@@ -54,10 +54,10 @@ internal sealed class JunkCleanerWindow : Window
         header.Children.Add(summary);
         header.Children.Add(new TextBlock
         {
-            Text = "Aphex Studio Ryssby - 2026",
-            Foreground = Muted,
-            FontSize = 11,
-            Margin = new Thickness(0, 4, 0, 0),
+            Text = "Developed by Aphex Studio Ryssby, 2026",
+            Foreground = new SolidColorBrush(Color.FromRgb(0xA5, 0xB8, 0xC9)),
+            FontSize = 13,
+            Margin = new Thickness(0, 6, 0, 2),
         });
         DockPanel.SetDock(header, Dock.Top);
         dock.Children.Add(header);

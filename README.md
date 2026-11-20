@@ -71,6 +71,7 @@ with `Private=false`, so they are not shipped with the plugin.
 
 ## Changelog
 
+- **1.0.1** - README in the package now points to the forum thread and the issue tracker; no code changes.
 - **1.0.0** - review window with per-entry checkboxes, Select all/none, dry run, English UI, embedded icon.
 - **0.1.0** - first working version: confirmation dialog listing up to 15 entries, hard-coded extension list.
 
