@@ -45,6 +45,16 @@ Some file types in the list are legitimate games on specific systems:
 
 Review the list before confirming - that is exactly why the plugin does not delete anything silently.
 
+## Feedback and contact
+
+- Forum thread and downloads: https://forums.launchbox-app.com/files/file/5834-junk-cleaner-review-and-remove-non-game-entries-from-your-library/
+- Bugs and false-positive reports (a file type that turned out to be a real game):
+  https://github.com/tobiaswidjestam-design/launchbox-junk-cleaner/issues
+- Built by **Aphex Studio Ryssby**, Sweden. Suggestions are welcome in the forum thread.
+
+If a file type should not be in the list for your system, say which platform and extension and it
+will be looked at - the extension list is meant to be a starting point, not a verdict.
+
 ## Uninstall
 
 Delete the folder `LaunchBox\Plugins\JunkCleaner`. No other files are touched.
