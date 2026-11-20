@@ -1,0 +1,20 @@
+﻿# build output
+bin/
+obj/
+release/
+.jbuild/
+
+# archived older versions (kept locally, not in the repo)
+versions/
+
+# packaged releases
+*.zip
+
+# IDE / editor
+.vs/
+.idea/
+*.user
+*.suo
+
+# local dotnet install if someone uses it inside the project
+.dotnet/

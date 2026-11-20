@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <AssemblyName>JunkCleaner.Plugin</AssemblyName>
+    <RootNamespace>JunkCleaner</RootNamespace>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Deterministic>true</Deterministic>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Version>1.0.0</Version>
+    <AssemblyTitle>Junk Cleaner for LaunchBox</AssemblyTitle>
+    <Product>Junk Cleaner</Product>
+    <Company>Aphex Studio Ryssby</Company>
+    <Authors>Aphex Studio Ryssby</Authors>
+    <Copyright>(c) 2026 Aphex Studio Ryssby</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- versions/ innehaller arkiverade kopior av aldre kallkod - kompilera dem inte -->
+    <Compile Remove="versions/**" />
+    <None Remove="versions/**" />
+    <EmbeddedResource Remove="versions/**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="icon32.png" LogicalName="JunkCleaner.icon32.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Pekar pa LaunchBox egna assemblies, kopieras INTE med (Private=false) -->
+    <Reference Include="Unbroken.LaunchBox.Plugins">
+      <HintPath>C:\Users\Administrator\LaunchBox\Core\Unbroken.LaunchBox.Plugins.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>C:\Users\Administrator\LaunchBox\Core\System.Drawing.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
